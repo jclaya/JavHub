@@ -131,4 +131,14 @@ class SiteController extends Controller
     {
         return $this->redirect(['user/create']);
     }
+
+    public function actionHotel()
+    {
+        return $this->redirect(['hotel/index']);
+    }
+
+    public function actionJob()
+    {
+        return $this->redirect(['job/index']);
+    }
 }

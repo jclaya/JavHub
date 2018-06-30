@@ -33,6 +33,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return [
             [['id', 'email', 'pass', 'name', 'lname', 'phone', 'resume'], 'required'],
+            ['email','email'],
             [['id', 'type'], 'integer'],
             [['email', 'pass', 'name', 'lname'], 'string', 'max' => 20],
             [['phone'], 'string', 'max' => 15],

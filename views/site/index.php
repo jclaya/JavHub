@@ -7,13 +7,15 @@ $this->title = 'Home';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Announcements:</h1>
+        <img src="logo.png"></img>
+        <h1>Announcements</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <!--<p class="lead">You have successfully created your Yii-powered application.</p>
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+    -->
     </div>
-
+        
     <div class="body-content">
 
         <div class="row">

@@ -28,6 +28,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `hotel`
 --
 
+CREATE TABLE `announcement` (
+  `id` int(2) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `job_id` int(11) NOT NULL
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE `hotel` (
   `id` int(2) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(20) NOT NULL,
@@ -78,7 +85,7 @@ CREATE TABLE `user` (
   `type` int(1) NOT NULL DEFAULT '0',
   `email` varchar(20) NOT NULL,
   `pass` varchar(20) NOT NULL,
-  `name` varchar(20) NOT NULL,
+  `fname` varchar(20) NOT NULL,
   `lname` varchar(20) NOT NULL,
   `phone` varchar(15) NOT NULL,
   `resume` varchar(100) NOT NULL
