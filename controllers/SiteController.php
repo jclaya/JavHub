@@ -123,6 +123,6 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->redirect(['user/create']);
+        return $this->render('about');
     }
 }
